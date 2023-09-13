@@ -1,5 +1,5 @@
 const { Activity } = require('../db');
-
+//test
 const getActivities = async (req, res) => {
 	//gets all entries in Activity model
 
