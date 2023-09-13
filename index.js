@@ -1,7 +1,8 @@
 const getServer = require('./src/server');
 const populateDataBase = require('./src/utils/populateDataBase');
 const { conn } = require('./src/db.js');
-const PORT = 3001;
+const { PORT } = process.env || 3001;
+require('dotenv').config();
 
 //initializing Server (getServer()), communication with DB (conn.sync) and populating database (if empty)
 //!change {force: false} before sending PI for correction!!
