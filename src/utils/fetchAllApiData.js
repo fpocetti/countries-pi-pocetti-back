@@ -20,7 +20,6 @@ const fetchAllData = async () => {
 		}));
 		return countries;
 	} catch (error) {
-		console.log(error);
 		throw error;
 	}
 };
