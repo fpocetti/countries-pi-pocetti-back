@@ -8,7 +8,7 @@ require('dotenv').config(); //execute configuration of dotenv dependency, to be 
 //!change {force: false} before sending PI for correction!!
 
 conn
-	.sync({ force: false })
+	.sync({ force: true })
 	.then(() => {
 		getServer().listen(PORT, async () => {
 			console.log(`Server listening on port ${PORT}`);
