@@ -5,7 +5,7 @@ const { PORT } = process.env || 3001;
 require('dotenv').config(); //execute configuration of dotenv dependency, to be able to use its variables (.env)
 
 //initializing Server (getServer()), communication with DB (conn.sync) and populating database (if empty)
-//!change {force: false} before sending PI for correction!!
+//! change {force: false} before sending PI for correction!!
 
 conn
 	.sync({ force: false })
